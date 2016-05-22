@@ -22,6 +22,27 @@ class PostsController < ApplicationController
     find_post
   end
 
+  def edit
+    find_post
+  end
+
+  def update
+    find_post
+
+    if @post.update(params[:post].permit(:title, :body, :slug))
+      redirect_to @post
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy
+    find_post
+    @post.destroy
+
+    redirect_to root_path
+  end
+
   private
 
   def post_params
