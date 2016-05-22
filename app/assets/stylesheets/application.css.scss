@@ -97,14 +97,31 @@ a {
     }
   }
 
+
+#main_footer {
+    background-color: black;
+   clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
+  }
  
-
-
-  .sign_in {
+.sign_in {
     position: absolute;
     right: 3em;
-    top: 80%;
+    top: 77%;
     font-size: .8em;
+    color: #9eafba;
+  }
+
+  
+
+  .copyright {
+     position: absolute;
+    left: 4em;
+    top: 80%;
+    font-size: .7em;
     color: #9eafba;
   }
 }
@@ -298,3 +315,15 @@ a {
     }
   }
 }
+
+ .footer {
+
+  
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
+
+    background: #484848 ;
+    color: #9eafba;
+    }

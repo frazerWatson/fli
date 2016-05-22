@@ -3,6 +3,7 @@
 <head>
   <title>FliBlog</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', '//fonts.googleapis.com/css?family=Raleway:400,700' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -31,6 +32,8 @@
     </ul>
 
     <p class="sign_in">Admin Login</p>
+    <br>
+    <p class="copyright">&copyright;2016 Fucking Little Idiots</p>
     
   </div>
   <div id="main_content">
@@ -48,6 +51,7 @@
      <% end %>
 
   <%= yield %>
-  </div>  
+ 
+  
 </body>
 </html>
