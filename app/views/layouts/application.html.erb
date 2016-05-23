@@ -20,7 +20,7 @@
       <li class="category">Website</li>
       <li><%= link_to "Blog", root_path %></li>
       <li><%= link_to "About", about_path %></li>
-      <!--  -->
+      <li><%= link_to "Contact", new_contact_path %></li>
     </ul>
 
     <ul>
@@ -48,8 +48,10 @@
       <% end %>
       
       <div class="buttons">
-         <button class ="button"><%= link_to "New Post", new_post_path %></button>
-         <button class="button">Log Out</button>
+        <% if user_signed_in? %>
+           <button class ="button"><%= link_to "New Post", new_post_path %></button>
+           <button class="button"><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></button>
+        <% end %>
        </div>
     </div>
 
