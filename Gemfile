@@ -29,6 +29,8 @@ gem 'will_paginate', '~> 3.0.7'
 
 gem 'mail_form', '~> 1.5.1'
 
+gem 'devise'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

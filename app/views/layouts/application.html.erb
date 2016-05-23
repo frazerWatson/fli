@@ -56,8 +56,16 @@
      <% flash.each do |name, msg| %>
         <%= content_tag(:div, msg, class: "alert") %>
      <% end %>
+      
+      <% if notice %>
+        <p class="notice"><%= notice %></p>
+      <% elsif alert %>
+        <p class="alert"><%= alert %></p>
+      <% end %>
 
   <%= yield %>
+
+
 
   
 </body>
