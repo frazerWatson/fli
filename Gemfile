@@ -31,6 +31,10 @@ gem 'mail_form', '~> 1.5.1'
 
 gem 'devise'
 
+gem 'aws-sdk'
+
+gem 'paperclip'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

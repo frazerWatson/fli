@@ -13,12 +13,18 @@
        <% end %>
   </p>
 
-
+  <p><%= image_tag @post.image.url(:medium), class:"post_image" %></br></p>
+  <p><%= image_tag "logo.svg" %></p>
+  <p><%= image_tag "logo.svg" %></p>
     
 
   <p class="body">
     <%= @post.body %>
   </p> 
+
+  <p><%= image_tag "logo.svg" %></p>
+  <p><%= image_tag "logo.svg" %></p>
+  <p><%= image_tag "logo.svg" %></p>
 
   <%= render 'disqus' %>
 
