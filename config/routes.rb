@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :posts
+  resources :posts do
+    resource :map
+  end
   resources :contacts, only: [:new, :create]
 
   root "posts#index"

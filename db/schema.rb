@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160524231345) do
+ActiveRecord::Schema.define(version: 20160525192113) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 20160524231345) do
     t.string   "panoramic_image_content_type"
     t.integer  "panoramic_image_file_size"
     t.datetime "panoramic_image_updated_at"
+    t.text     "address"
   end
 
   add_index "posts", ["slug"], name: "index_posts_on_slug", unique: true, using: :btree
