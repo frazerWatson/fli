@@ -35,6 +35,8 @@ gem 'aws-sdk'
 
 gem 'paperclip'
 
+gem 'fancybox-rails'
+
 
 
 # Use ActiveModel has_secure_password
