@@ -16,6 +16,13 @@
 
 @import 'normalize';
 
+
+*:focus {
+outline: 0;
+}
+
+
+
 html, body {
   font-family: 'Raleway', sans-serif;
 }
@@ -29,8 +36,13 @@ a {
   color: inherit;
 }
 
+.pan_img {
+       max-width: 100%;
+    height: auto;
+}
+
 #sidebar {
-  width: 250px;
+  width: 200px;
   position: fixed;
   left: 0;
   top: 0;
@@ -97,6 +109,15 @@ a {
     }
   }
 
+  #contact {
+        color: white;
+        text-decoration: none;
+        transition: all .4s ease;
+        &:hover {
+          color: #33acb7;
+        }
+      }
+
 
 #main_footer {
     background-color: black;
@@ -109,7 +130,7 @@ a {
  
 .sign_in {
     position: absolute;
-    right: 3em;
+    right: 2.2em;
     top: 77%;
     font-size: .8em;
     color: #9eafba;
@@ -119,7 +140,7 @@ a {
 
   .copyright {
      position: absolute;
-    left: 4em;
+    left: 1.5em;
     top: 80%;
     font-size: .7em;
     color: #9eafba;
@@ -154,7 +175,7 @@ a {
 }
 
 #main_content {
-  margin-left: 250px;
+  margin-left: 200px;
   
 
   #header {

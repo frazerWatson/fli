@@ -1,3 +1,4 @@
+<div id="page_wrapper">
 <%= form_for @post do |f| %>
    <% if @post.errors.any? %>
     <div id="errors">
@@ -14,14 +15,21 @@
     <%= f.text_field :title %>
   </p>
 
-  <%= f.file_field :image %>
+  <p>
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </p>
+
 
   <p>
     <%= f.label :body %><br>
     <%= f.text_area :body %>
   </p>
 
+  
+
   <p>
     <%= f.submit %>
   </p>
 <% end %>
+</div>

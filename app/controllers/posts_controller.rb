@@ -3,7 +3,7 @@ class PostsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    @posts = Post.all.order('created_at DESC').paginate(page: params[:page], per_page: 2)
+    @posts = Post.all.order('created_at DESC').paginate(page: params[:page], per_page: 5)
   end
 
   def new
@@ -31,7 +31,7 @@ class PostsController < ApplicationController
   def update
     find_post
 
-    if @post.update(params[:post].permit(:title, :image, :body, :slug))
+    if @post.update(params[:post].permit(:title, :panoramic_image, :image, :body, :slug))
       redirect_to @post
     else
       render 'edit'
@@ -48,7 +48,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :image, :body, :slug)
+    params.require(:post).permit(:title, :panoramic_image_file_name , :image, :body, :slug)
   end
 
    def find_post
