@@ -1,8 +1,8 @@
 class Location < ActiveRecord::Base
-  belongs_to :post
+  # belongs_to :post
 
-  geocoded_by :address
-  after_validation :geocode
+  # geocoded_by :address
+  # after_validation :geocode
 
-  validates :address, presence: true
+  # validates :address, presence: true
 end
