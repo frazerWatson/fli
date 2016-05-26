@@ -68,10 +68,10 @@ a {
   padding: 7em 0 0 0;
   border-right: 0px solid #d6dce0;
   #logo {
-    width: 40px;
+    width: 100%;
     position: absolute;
-    right: 3em;
-    top: 3em;
+    left: 1em;
+    top: 1em;
   }
   ul {
     list-style: none;
@@ -307,11 +307,27 @@ a {
         border-radius: 0.35em;
       }
     }
+    
+    img {
+    display: block;
+    margin: 0 auto;
+}
+
+.about_title {
+  text-align: center;
+}
+
+#about_p {
+  text-align: center;
+}
+
+
     #content {
       h1 {
         font-weight: 500;
       }
       p {
+        text-align: center;
         font-size: 1.1em;
         line-height: 1.75;
       }
