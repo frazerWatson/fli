@@ -93,6 +93,8 @@ ul.topnav {
   padding: 0;
   overflow: hidden;
   background-color: black;
+  border-bottom: 1px solid #ffab0c;
+  border-top: 1px solid #ffab0c;
 
 }
 
@@ -119,6 +121,8 @@ ul.topnav li.icon {display: none;}
   ul.topnav li.icon {
     float: right;
     display: inline-block;
+    border-bottom: 2px solid #ffab0c;
+  border-top: 2px solid #ffab0c;
   }
 }
 
@@ -128,6 +132,8 @@ ul.topnav li.icon {display: none;}
     position: fixed;
     right: 0;
     top: 0;
+    border-bottom: 1px solid #ffab0c;
+  border-top: 1px solid #ffab0c;
   }
   ul.topnav.responsive li {
     float: none;
