@@ -410,6 +410,12 @@ button.navbar-toggle.collapsed {
   text-align: center;
 }
 
+@media screen and (max-width:340px) {
+  #footer {
+  text-align: center;
+}
+}
+
 
 .map {
   width: 400px;
