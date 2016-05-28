@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>FliBlog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag 'application', '//fonts.googleapis.com/css?family=Raleway:400,700' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -13,9 +14,9 @@
   
 
   <div id="sidebar">
-    <div id="logo">
+    <div>
       <%= link_to root_path do %>
-        <img src="/assets/rsz_logo-1.jpg">
+        <img id="logo" src="/assets/rsz_logo-1.jpg">
       <% end %>
     </div>
 
@@ -69,7 +70,7 @@
 
   <%= yield %>
 
-  
+  </div>
 
   
 </body>
