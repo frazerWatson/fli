@@ -77,6 +77,14 @@ body {
     height: auto;
 }
 
+@media screen and (max-width:340px) {
+  .pan_img {
+    padding-top: 2em;
+       max-width: 100%;
+    height: auto;
+}
+}
+
 .topnav {
   position: fixed;
   width: 100%;
