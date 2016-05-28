@@ -21,20 +21,38 @@
 outline: 0;
 }
 
-html,body {
+body {
   padding-top: 150px;
   font-size:100%;
   font-family: 'Raleway', sans-serif;
 }
 
 @media screen and (max-width:340px) {
-  html,body {
+  body {
   
   font-size:100%;
   font-family: 'Raleway', sans-serif;
   width: 100%;
     height: 100%;
    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+}
+
+html {
+   width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+@media screen and (max-width:340px) {
+  html {
+   width: 100%;
+    height: 100%;
+    margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
 }
