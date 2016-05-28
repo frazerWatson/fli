@@ -23,18 +23,20 @@ outline: 0;
 
 body {
   padding-top: 150px;
+  font-size:100%;
+  font-family: 'Raleway', sans-serif;
 }
 
 
 .header_logo {
-  background-image: url('/assets/nav-3.jpg');
+  background-image: url('/assets/nav.png');
   height: 200px;
-  padding-top: 30px;
+  padding-top: 35px;
   padding-left: 5px;
   position:fixed;
   top: 0;
   width: 100%;
-  
+  z-index: 999;
 }
 
 .topnav {
@@ -43,6 +45,7 @@ body {
   height: x;
   border-bottom: 1px solid #33acb7;
   border-top: 1px solid #33acb7;
+  z-index: 999;
 }
 
 
@@ -73,7 +76,7 @@ ul.topnav li a:hover {background-color: #33acb7;}
 
 ul.topnav li.icon {display: none;}
 
-@media screen and (max-width:810px) {
+@media screen and (max-width:720px) {
   ul.topnav li:not(:first-child) {display: none;}
   ul.topnav li.icon {
     float: right;
@@ -81,7 +84,7 @@ ul.topnav li.icon {display: none;}
   }
 }
 
-@media screen and (max-width:810px) {
+@media screen and (max-width:720px) {
   ul.topnav.responsive {position: fixed;}
   ul.topnav.responsive li.icon {
     position: fixed;
@@ -183,7 +186,7 @@ button.navbar-toggle.collapsed {
     }
   }
   #post_content {
-    padding: 1em 3em;
+    padding: 5em 3em;
     .title {
       font-weight: 500;
       text-decoration: none;
@@ -301,7 +304,11 @@ button.navbar-toggle.collapsed {
 }
 
 
-
+.map {
+  width: 400px;
+  height: 300px;
+  z-index: -1;
+}
 
 
 
