@@ -308,6 +308,27 @@ button.navbar-toggle.collapsed {
   }
   }
 
+  @media screen and (max-width:340px) {
+    #post_content {
+    padding: 5em 1em;
+    .title {
+      font-weight: 300;
+      text-decoration: none;
+      color: #2a2f35;
+      font-size: 2.5em;
+      margin-bottom: 0;
+    }
+    .body {
+      font-size: 1.1em;
+      line-height: 1.75;
+    }
+    .date_and_author {
+      color: #9eafba;
+      margin: .5em 0 2em 0;
+    }
+  }
+  }
+  
 #page_wrapper {
 
     padding: 5em;
@@ -341,6 +362,7 @@ button.navbar-toggle.collapsed {
 
 #about_p {
   text-align: left;
+  font-size: 1em;
 }
 
 
