@@ -478,6 +478,14 @@ button.navbar-toggle.collapsed {
   z-index: -1;
 }
 
+@media screen and (max-width:340px) {
+  .map {
+  width: 200px;
+  height: 150px;
+  z-index: -1;
+}
+}
+
 #left_sidebar {
   width: 5%;
   position: fixed;
