@@ -121,8 +121,7 @@ ul.topnav li.icon {display: none;}
   ul.topnav li.icon {
     float: right;
     display: inline-block;
-    border-bottom: 2px solid #ffab0c;
-  border-top: 2px solid #ffab0c;
+    
   }
 }
 
@@ -132,8 +131,7 @@ ul.topnav li.icon {display: none;}
     position: fixed;
     right: 0;
     top: 0;
-    border-bottom: 1px solid #ffab0c;
-  border-top: 1px solid #ffab0c;
+    
   }
   ul.topnav.responsive li {
     float: none;
@@ -354,11 +352,12 @@ button.navbar-toggle.collapsed {
       #page_wrapper {
 
     padding-top: 5em;
-    padding: 5em 1em;
+    padding: 1em 1em;
     #profile_image {
       width: 300px;
       float: left;
-      margin-right: 2em;
+      margin-right: 1em;
+      z-index: 999;
       img {
         width: 100%;
         border-radius: 0.35em;
