@@ -332,6 +332,13 @@ button.navbar-toggle.collapsed {
   text-align: center;
 }
 
+@media screen and (max-width:340px) {
+  .about_title {
+  text-align: center;
+  font-weight: 200;
+}
+}
+
 #about_p {
   text-align: left;
 }
