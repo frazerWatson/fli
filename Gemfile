@@ -31,12 +31,19 @@ gem 'mail_form', '~> 1.5.1'
 
 gem 'devise'
 
-gem 'aws-sdk'
+gem 'aws-sdk', '~> 2'
 
-gem 'paperclip'
+
+gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
+
 
 gem 'fancybox-rails'
 
+gem "refile", require: 'refile/rails', git: "https://github.com/refile/refile.git"
+
+gem "refile-mini_magick"
+
+gem "refile-s3"
 
 
 # Use ActiveModel has_secure_password

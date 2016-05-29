@@ -23,10 +23,11 @@
  
   <div id='header' class="container-fluid-header">
   <%= link_to image_tag("/assets/rsz_logo-1.jpg"), root_path, class: "header_logo"  %>
+  
   </div>
   
   
- <div>
+ <span>
   <ul class="topnav">
   <li class="active mf"><a href="/"><img src="/assets/mini.jpg"></a></li>
   <li><%= link_to "Blog", root_path %></li>
@@ -38,7 +39,7 @@
   </li>
 </ul>
 
- </div>
+ </span>
 
 
 
@@ -85,6 +86,7 @@ function myFunction() {
     document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
 }
 </script>
+
 
   
 </body>
